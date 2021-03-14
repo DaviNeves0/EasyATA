@@ -1,1 +1,1 @@
-### Projeto da parceria Visiona com a FATEC de São José dos Campos. 
+### Projeto da parceria IACIT com a FATEC de São José dos Campos. 
