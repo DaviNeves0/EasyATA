@@ -10,3 +10,6 @@
 **Developer:** Mateus Prestes Teodoro Aaves</br>
 **Developer:** Pedro Cruz Oliveira Araújo</br>
 **Developer:** Rodrigo Félix da Silva  
+
+# Tecnologias
+![](https://ibb.co/BK4Zv2D)
