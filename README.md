@@ -12,4 +12,4 @@
 **Developer:** Rodrigo Félix da Silva  
 
 # Tecnologias
-![](https://ibb.co/BK4Zv2D)
+![](https://i.ibb.co/2Y8tR32/Tecnologias.png)
