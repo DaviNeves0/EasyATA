@@ -73,8 +73,8 @@ $ sudo apt install nodejs
 
 # Telas do Sistema EasyATA
 
-<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documentação/1_Index.PNG" width="50px">
-<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documentação/2_Registro.PNG" width="50px">
-<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documentação/3_Logado.PNG" width="50px">
+<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documentação/1_Index.PNG" width="200px">
+<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documentação/2_Registro.PNG" width="200px">
+<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documentação/3_Logado.PNG" width="200px">
 
 
