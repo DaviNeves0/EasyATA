@@ -63,3 +63,7 @@ $ sudo apt install nodejs
   </ul>
 </ul>
 
+# Diagrama Caso de Uso
+
+<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20caso%20de%20uso.png">
+
