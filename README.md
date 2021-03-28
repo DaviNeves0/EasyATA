@@ -67,3 +67,7 @@ $ sudo apt install nodejs
 
 <img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20caso%20de%20uso.png">
 
+# Diagrama Caso de Contexto
+
+<ims src=" https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20de%20Contexto.png">
+
