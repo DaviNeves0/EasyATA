@@ -19,4 +19,7 @@
 
 <img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documentação/Telas.png">
 
+# GIF funcionamento sistema login/Cadastro no banco
+
+![CadastroLoginLogout](https://user-images.githubusercontent.com/56441534/112773796-cd673600-900d-11eb-86d1-fc077a504b77.gif)
 
