@@ -35,6 +35,39 @@
 
 <hr>
 
+# Entregas 
+
+ 
+| Sprint 1 - Documentação, Sistema de Login e Logout                                                     | Conclusão|
+| ------------------------------------------------------------------- | --------------- |
+|   Fazer  Lista de Requisitos, Diagrama de Contexto, Casos de Uso com Descrição, Diagrama de Atividades e Diagrama de Implantação | OKAY   |
+| O usuário deve ser capaz de realizar o login e logout na plataforma; | OKAY |
+
+<hr>
+
+| Sprint 2 - Cadastro de Usuários, Gerar Ata de Reunião, Imprimir Ata                                | Conclusão |
+| ------------------------------------------------------------------- | --------------- |
+| Cada usuário deve possuir um perfil de acesso e cada perfil define as funcionalidades daquele usuário | - |
+| O usuário será capaz de gerar uma Ata a cada reunião, seguindo o modelo definido. Cada Ata será única | - |
+| Todo usuário poderá cadastrar um modelo de Ata, fazer à impressão da mesma nos modelos PDF e Excel    | - |
+
+<hr>
+
+| Sprint 3 - Monitorar Ata de Reunião                                                            | Conclusão |
+| ------------------------------------------------------------------- | --------------- |
+| Exibir uma listagem com a situação atual das Atas. O usuário poderá filtrar a pesquisa por Estado, por Data de Criação da Ata e por Pauta|   -   |
+
+<hr>
+
+
+| Sprint 4 - Adicionar Revisão:                                                          | Conclusão |
+| ------------------------------------------------------------------- | --------------- |
+|  Usuário poderá pedir a revisão de uma ata existente, devendo informar o assunto da revisão Responsável da Revisão e Prazo da Revisão. Revisões pode ser incluídas, alteradas e excluídas quantas vezes forem necessárias|   -   |
+
+
+
+<hr>
+
 # 📓Documentação
 ## Diagrama Caso de Uso
 
