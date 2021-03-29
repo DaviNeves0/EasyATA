@@ -1,7 +1,7 @@
 ### Projeto da parceria IACIT com a FATEC de São José dos Campos. 
 
 
-# Team  
+# 📚Team  
 **Scrum Master/Developer:** Davi Silva Martins das Neves  
 **Product Owner/Developer:** Guilherme Oliveira Pontes Alvarenga  
 **Developer:** Guilherme Madeira da Silveira  
@@ -14,7 +14,7 @@
 
 <hr>
 
-# Sprints
+# ⚡Sprints
 | Sprint                                                              | Data de Entrega |
 | ------------------------------------------------------------------- | --------------- |
 | [Sprint 1](https://github.com/DaviNeves0/EasyATA/tree/Login-RegisterDB) | 28 de março 2021     |
@@ -24,12 +24,12 @@
 
 <hr>
 
-# Tecnologias
+# 💻Tecnologias
 ![](https://i.ibb.co/2Y8tR32/Tecnologias.png)
 
 <hr>
 
-# Documentação
+# 📓Documentação
 ## Diagrama Caso de Uso
 
 <img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20caso%20de%20uso.png">
@@ -53,7 +53,8 @@
 <img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documentação/Telas.png">
 
 <hr>
-# Instruções de Instalação
+
+# 🖥Instruções de Instalação
 
 <ul>
   <li><b>Java Development Kit</b></li>
