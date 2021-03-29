@@ -27,17 +27,21 @@
 # Tecnologias
 ![](https://i.ibb.co/2Y8tR32/Tecnologias.png)
 
+<hr>
+
 # Documentação
 ## Diagrama Caso de Uso
 
 <img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20caso%20de%20uso.png">
 
 <hr>
+
 ## Diagrama de atividades
 
-  <img width="45%" src = "https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20de%20atividades.png" >
+<img width="45%" src = "https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20de%20atividades.png" >
 
 <hr>
+
 ## Diagrama de Contexto
 
 <img src= "https://raw.githubusercontent.com/DaviNeves0/EasyATA/main/Documenta%C3%A7%C3%A3o/diagrama%20de%20contexto.png">
