@@ -69,7 +69,7 @@ $ sudo apt install nodejs
 
 # Diagrama Caso de Contexto
 
-<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20de%20Contexto.png">
+<img src= "https://raw.githubusercontent.com/DaviNeves0/EasyATA/main/Documenta%C3%A7%C3%A3o/diagrama%20de%20contexto.png">
 
 # Telas do Sistema EasyATA
 
