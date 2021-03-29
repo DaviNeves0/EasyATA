@@ -87,12 +87,6 @@
 
 <hr>
 
-# Telas do Sistema EasyATA
-
-<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documentação/Telas.png">
-
-<hr>
-
 # 🖥Instruções de Instalação
 
 <ul>
