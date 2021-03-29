@@ -12,6 +12,8 @@
 **Developer:** Pedro Cruz Oliveira Araújo</br>
 **Developer:** Rodrigo Félix da Silva  
 
+<hr>
+
 # Sprints
 | Sprint                                                              | Data de Entrega |
 | ------------------------------------------------------------------- | --------------- |
@@ -20,9 +22,33 @@
 | Sprint 3 | 15 de maio  2021     |
 | Sprint 4 | 05 de junho 2021     |
 
+<hr>
+
 # Tecnologias
 ![](https://i.ibb.co/2Y8tR32/Tecnologias.png)
 
+# Documentação
+## Diagrama Caso de Uso
+
+<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20caso%20de%20uso.png">
+
+<hr>
+## Diagrama de atividades
+
+  <img width="45%" src = "https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20de%20atividades.png" >
+
+<hr>
+## Diagrama de Contexto
+
+<img src= "https://raw.githubusercontent.com/DaviNeves0/EasyATA/main/Documenta%C3%A7%C3%A3o/diagrama%20de%20contexto.png">
+
+<hr>
+
+# Telas do Sistema EasyATA
+
+<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documentação/Telas.png">
+
+<hr>
 # Instruções de Instalação
 
 <ul>
@@ -70,21 +96,3 @@ $ sudo apt install nodejs
         
   </ul>
 </ul>
-
-# Diagrama Caso de Uso
-
-<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20caso%20de%20uso.png">
-
-# Diagrama de atividades
-
-  <img width="45%" src = "https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20de%20atividades.png" >
-
-# Diagrama de Contexto
-
-<img src= "https://raw.githubusercontent.com/DaviNeves0/EasyATA/main/Documenta%C3%A7%C3%A3o/diagrama%20de%20contexto.png">
-
-# Telas do Sistema EasyATA
-
-<img src= "https://github.com/DaviNeves0/EasyATA/blob/main/Documentação/Telas.png">
-
-
