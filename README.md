@@ -12,6 +12,14 @@
 **Developer:** Pedro Cruz Oliveira Araújo</br>
 **Developer:** Rodrigo Félix da Silva  
 
+# Sprints
+| Sprint                                                              | Data de Entrega |
+| ------------------------------------------------------------------- | --------------- |
+| [Sprint 1](https://github.com/DaviNeves0/EasyATA/tree/Login-RegisterDB) | 28 de março 2021     |
+| Sprint 2 | 18 de abrl  2021     |
+| Sprint 3 | 15 de maio  2021     |
+| Sprint 4 | 05 de junho 2021     |
+
 # Tecnologias
 ![](https://i.ibb.co/2Y8tR32/Tecnologias.png)
 
