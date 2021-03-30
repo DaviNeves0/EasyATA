@@ -69,7 +69,7 @@
 
 # 📓Documentação
 
-## <a href="#">Docuemntação total</a>
+## <a href="https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3o.pdf">Docuemntação total</a>
 
 ## Diagrama Caso de Uso
 
