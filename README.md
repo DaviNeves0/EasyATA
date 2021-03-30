@@ -19,7 +19,7 @@
 
 ### Sistema capaz de cadastrar seus usuários no banco de dados do App, permitindo que apenas usuários credenciados no banco sejam capazes de fazer o uso da aplicação, mantendo a integridade e a segurança das atas geradas.
 
-### <a href="#">Apresentação da Entrega</a>
+### <a href="https://github.com/DaviNeves0/EasyATA/blob/Login-RegisterDB/Documenta%C3%A7%C3%A3o/EasyATA-Sprint1.pptx">Apresentação da Entrega</a>
 <hr>
 
 # Tecnologias
