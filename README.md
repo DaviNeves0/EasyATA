@@ -25,7 +25,7 @@
 <hr>
 
 
-# 🚀💻 Technologies
+# 💻 Technologies
 
 ![](https://i.ibb.co/2Y8tR32/Tecnologias.png)</br>
 </br>
