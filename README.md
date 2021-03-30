@@ -97,14 +97,6 @@
 ```bash
 $ sudo apt install oracle-java15-installer
 ```
-   </ul>
-</ul>
- 
-<ul>
-  <li><b>Node.js</b></li>
-    <ul>
-    <li><b>Windows</b></li> Realizar o download na página abaixo.<br/>https://nodejs.org/en/download/
-    <li><b>Linux</b></li>Executar o comando.<br/>
     
 ```bash
 $ sudo apt install nodejs
