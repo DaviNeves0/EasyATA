@@ -19,7 +19,7 @@
 
 ### Sistema capaz de cadastrar seus usuários no banco de dados do App, permitindo que apenas usuários credenciados no banco sejam capazes de fazer o uso da aplicação, mantendo a integridade e a segurança das atas geradas.
 
-### <a href="#">Appresentação da Entrega</a>
+### <a href="#">Apresentação da Entrega</a>
 <hr>
 
 # Tecnologias
