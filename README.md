@@ -97,10 +97,7 @@
 ```bash
 $ sudo apt install oracle-java15-installer
 ```
-    
-```bash
-$ sudo apt install nodejs
-```    
+   
   </ul>
 </ul>
 
