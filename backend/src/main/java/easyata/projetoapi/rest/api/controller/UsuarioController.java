@@ -3,6 +3,7 @@ package easyata.projetoapi.rest.api.controller;
 import easyata.projetoapi.rest.api.repository.UsuarioRepository;
 import easyata.projetoapi.rest.api.model.UsuarioModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
