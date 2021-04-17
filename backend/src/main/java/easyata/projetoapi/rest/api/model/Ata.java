@@ -12,13 +12,16 @@ public class Ata implements Serializable {
     public Long id;
 
     @Column(nullable = false, length = 50)
-    public String data;
+    public String data_inicio;
 
     @Column(nullable = false, length = 50)
-    public String inicio;
+    public String data_fim;
 
     @Column(nullable = false, length = 50)
-    public String fim;
+    public String hora_inicio;
+
+    @Column(nullable = false, length = 50)
+    public String hora_fim;
 
     @Column(nullable = false, length = 50)
     public String local;
@@ -57,6 +60,9 @@ public class Ata implements Serializable {
     @Column(nullable = false, length = 50)
     public String distribuicao;
 
+    @Column(nullable = false, length = 50)
+    public String assinatura;
+
     //get & set
 
 
@@ -68,17 +74,21 @@ public class Ata implements Serializable {
         this.id = id;
     }
 
-    public String getData() { return data; }
+    public String getData_inicio() { return data_inicio; }
 
-    public void setData(String data) { this.data = data; }
+    public void setData_inicio(String data_inicio) { this.data_inicio = data_inicio; }
 
-    public String getInicio() { return inicio; }
+    public String getData_fim() { return data_fim; }
 
-    public void setInicio(String inicio) { this.inicio = inicio; }
+    public void setData_fim(String data_fim) { this.data_fim = data_fim; }
 
-    public String getFim() { return fim; }
+    public String getHora_inicio() { return hora_inicio;}
 
-    public void setFim(String fim) { this.fim = fim;}
+    public void setHora_inicio(String hora_inicio) { this.hora_inicio = hora_inicio; }
+
+    public String getHora_fim() { return hora_fim; }
+
+    public void setHora_fim(String hora_fim) { this.hora_fim = hora_fim; }
 
     public String getLocal() { return local; }
 
