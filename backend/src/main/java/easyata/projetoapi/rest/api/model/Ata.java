@@ -63,6 +63,12 @@ public class Ata implements Serializable {
     @Column(nullable = false, length = 50)
     public String assinatura;
 
+    @Column(nullable = false, length=50)
+    public String nome;
+
+    @Column(nullable = false, length = 50)
+    public String representante;
+
     //get & set
 
 
@@ -137,4 +143,16 @@ public class Ata implements Serializable {
     public String getDistribuicao() { return distribuicao; }
 
     public void setDistribuicao(String distribuicao) { this.distribuicao = distribuicao; }
+
+    public String getAssinatura() { return assinatura; }
+
+    public void setAssinatura(String assinatura) { this.assinatura = assinatura; }
+
+    public String getNome() { return nome; }
+
+    public void setNome(String nome) { this.nome = nome; }
+
+    public String getRepresentante() { return representante; }
+
+    public void setRepresentante(String representante) { this.representante = representante; }
 }
