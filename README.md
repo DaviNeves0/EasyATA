@@ -15,6 +15,15 @@
 <hr>
 
 # Entrega
+Entre as funcionalidades dessa entrega, temos como novidade:
+  - Gerar PDF das atas criadas pelos usuários.
+  - Gerar CSV das atas criadas pelos usuários.
+  - Painel de administrador.
+  Também aprimoramos o layout e melhoramos o sistema de registro e login da aplicação.
+  
+  Segue abaixo um gif da aplicação:
+  
+  
 
 # Tecnologias
 ## FrontEnd
