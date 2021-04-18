@@ -2,13 +2,12 @@
 
 
 # 📚Team  
-**Scrum Master/Developer:** Davi Silva Martins das Neves  
+**Scrum Master/Developer:** Mateus Prestes Teodoro Aaves   
 **Product Owner/Developer:** Guilherme Oliveira Pontes Alvarenga  
 **Developer:** Guilherme Madeira da Silveira  
 **Developer:** Henrique Kenji Nawa  
 **Developer:** João Pedro Rabello Brasil de Mecenas</br>
 **Developer:** João Vitor de Oliveira Soeiro</br>
-**Developer:** Mateus Prestes Teodoro Aaves</br>
 **Developer:** Pedro Cruz Oliveira Araújo</br>
 **Developer:** Rodrigo Félix da Silva  
 
