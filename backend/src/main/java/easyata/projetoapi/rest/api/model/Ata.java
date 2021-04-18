@@ -29,7 +29,7 @@ public class Ata implements Serializable {
     //Corpo
 
     @Column(nullable = false, length = 50)
-    public String projeto;
+    public String tema;
 
     @Column(nullable = false, length = 50)
     public String participante;
@@ -100,9 +100,9 @@ public class Ata implements Serializable {
 
     public void setLocal(String local) { this.local = local; }
 
-    public String getProjeto() { return projeto; }
+    public String getTema() { return tema; }
 
-    public void setProjeto(String projeto) { this.projeto = projeto; }
+    public void setTema(String tema) { this.tema = tema; }
 
     public String getParticipante() { return participante; }
 
