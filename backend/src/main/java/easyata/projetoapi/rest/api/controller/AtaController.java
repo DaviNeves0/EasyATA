@@ -9,7 +9,7 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
-@RequestMapping(value="/ata")
+@RequestMapping(value="/api")
 public class AtaController {
 
     @Autowired
