@@ -2,7 +2,7 @@
 
 
 # Team
-**Scrum Master/Developer:** Mateus Prestes Teodoro Alves
+**Scrum Master/Developer:** Mateus Prestes Teodoro Alves</br>
 **Product Owner/Developer:** Guilherme Oliveira Pontes Alvarenga  
 **Developer:** Guilherme Madeira da Silveira  
 **Developer:** Henrique Kenji Nawa  
