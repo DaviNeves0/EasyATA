@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import api from "../service/api";
 
 import imagens from "../assets/img2.png";
-import './cadastro.css';
+import './style.css';
 
 function Cadastro() {
 
@@ -40,7 +40,7 @@ function Cadastro() {
                             <div className="row">
                                 <div className="col-lg-10 col-xl-8 mx-auto">
                                         <div className="mb-5 text-center">
-                                            <p>Faça o seu cadastro no EasyATA !</p>
+                                            <p>Faça o seu cadastro no EasyATA!</p>
                                         </div>
                                     <form onSubmit={handleCadastrar}>
                                         <div className="form-group mb-4">
@@ -69,7 +69,7 @@ function Cadastro() {
                                         </div>
                                         <button type="submit" className="btn btn-primary btn-block">Cadastrar</button>
                                         <div className="sign-up">
-                                            Já possui uma conta? <Link to="/">Entre !</Link>
+                                            Já possui uma conta? <Link to="/">Entre!</Link>
                                         </div>
                                     </form>
                                 </div>
