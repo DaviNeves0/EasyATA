@@ -25,7 +25,7 @@
 
 * Cadastro um modelo de ata e impressão de documentos da ata nos modelos:
   - PDF;
-  - CSV.
+  - CSV;
  
 * Aprimoramento do layout e melhoria do sistema de registro e login da aplicação.
 
