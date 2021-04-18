@@ -72,6 +72,7 @@
 
 ## Diagrama Caso de Uso
 
+
 <a href="https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20caso%20de%20uso.png">Veja o documento</a>
 
 <hr>
