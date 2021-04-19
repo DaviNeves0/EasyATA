@@ -7,7 +7,9 @@ function Index() {
     return (
         <div>
             <Menu/>
-            <div><h2>Bem vindo ao EasyATA</h2></div>
+            <div className="container" style={{margin:'2%'}}>
+                    <h2>Bem vindo ao EasyATA </h2>                    
+            </div>
         </div>
     )
 }

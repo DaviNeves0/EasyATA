@@ -19,9 +19,11 @@ class UserComponent extends React.Component{
 
     render(){
         return (
-            <div>
-                <div>
-                    <h1 className = "text-center">User List</h1>
+            <div className="container">
+                <div className="card shadow" style={{margin:'5%'}}>
+                <div className="card-header">
+                    <h4>Usuarios cadastrados:</h4>        
+                </div>
                     <table className = "table table-striped">
                         <thead>
                             <tr>

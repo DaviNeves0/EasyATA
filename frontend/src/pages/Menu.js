@@ -21,8 +21,6 @@ function Menu() {
             <li className="nav-item"><a href="/formulario">Cadastrar ATA</a></li>
 
             <li className="nav-item"><a href="/administrador">Administrador</a></li>
-     
-            <li className="nav-item"><a href="#">Gerar Modelo</a></li>
 
             <li className="nav-item"><a href="/">Sair</a></li>
           </ul>

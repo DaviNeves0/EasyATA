@@ -3,6 +3,8 @@ import "./style.css"
 import { useHistory } from "react-router-dom";
 import { CSVLink } from "react-csv";
 
+import { Page, Text, View, StyleSheet, PDFDownloadLink, Document} from '@react-pdf/renderer';
+
 import Popup from './components/Popup';
 import api from "../service/api";
 
@@ -10,6 +12,63 @@ import Menu from './Menu';
 
 export function Formulario() {
 
+    const styles = StyleSheet.create({
+        page: {
+          flexDirection: 'row',
+          backgroundColor: '#E4E4E4'
+        },
+        section: {
+          margin: 10,
+          padding: 10,
+          flexGrow: 1
+        }
+    });
+
+    const MyDocument = () => (
+        <Document>
+          <Page size="A4" style={styles.page}>
+            <View style={styles.section}>
+              <Text>Tema: </Text>
+              <Text>{tema}</Text>  
+              <Text>Pauta: </Text>
+              <Text>{pauta}</Text>
+              <Text>Data Inicio: </Text>
+              <Text>{data_inicio}</Text>            
+              <Text>Data Fim: </Text>
+              <Text>{data_fim}</Text>
+              <Text>Horario Inicio: </Text>
+              <Text>{hora_inicio}</Text>
+              <Text>Hora Fim: </Text>
+              <Text>{hora_fim}</Text>
+              <Text>Local da reunião: </Text>
+              <Text>{local}</Text>
+              <Text>Participantes: </Text>
+              <Text>{participante}</Text>
+              <Text>Areas: </Text>
+              <Text>{area}</Text>
+              <Text>E-mails: </Text>
+              <Text>{email}</Text>
+              <Text>Telefones: </Text>
+              <Text>{telefone}</Text>
+              <Text>Assuntos: </Text>
+              <Text>{assunto}</Text>
+              <Text>Responsaveis: </Text>
+              <Text>{responsavel}</Text>
+              <Text>Prazos: </Text>
+              <Text>{prazo}</Text>
+              <Text>Distribuição: </Text>
+              <Text>{distribuicao}</Text>
+              <Text>Representantes: </Text>
+              <Text>{representante}</Text>
+              <Text>Nomes: </Text>
+              <Text>{nome}</Text>
+              <Text>Assinaturas: </Text>
+              <Text>{assinatura}</Text>
+            </View>
+          </Page>
+        </Document>
+      );
+    
     const [buttonPopup, setButtonPopup] = useState(false);
 
     const headers = [
@@ -85,6 +144,7 @@ export function Formulario() {
 
         try{
         const response = await api.post('saveAta', dados);
+        alert('Sucesso!')
         }catch(err){
             alert('Erro')
         }
@@ -105,7 +165,7 @@ export function Formulario() {
                                 <div className="form-group row">
                                     <div className="col-2">Tema da Reunião:</div>
                                     <div className="col-4">
-                                        <input type="text" className="form-control" name="tema"
+                                        <input type="text" className="form-control" name="tema" id="tema"
                                          onChange={(e) => setTema(e.target.value)}  />       
                                     </div>  
                                     <div className="col-2">Pauta da Reunião:</div>
@@ -116,22 +176,24 @@ export function Formulario() {
                                 </div> 
                                 <div className="form-group row">
                                     <div className="col-2">Data:</div>
-                                    <div className="col-2">
-                                        <input type="text" className="form-control" name="data_inicio" placeholder="Início" 
+                                    <div className="col-4">
+                                        <input type="date" className="form-control" name="data_inicio" placeholder="Início" 
                                          onChange={(e) => setData_Inicio(e.target.value)} />       
                                     </div>  
-                                    <div className="col-2">
-                                        <input type="text" className="form-control" name="data_fim" placeholder="Fim" 
+                                    <div className="col-4">
+                                        <input type="date" className="form-control" name="data_fim" placeholder="Fim" 
                                          onChange={(e) => setData_Fim(e.target.value)}/>       
                                     </div>  
+                                </div>
 
-                                    <div className="col-2">Horário:</div>
-                                    <div className="col-2">
-                                        <input type="text" className="form-control" name="hora_inicio" placeholder="Início"  
+                                <div className="form-group row">
+                                <div className="col-2">Horário:</div>
+                                    <div className="col-4">
+                                        <input type="time" className="form-control" name="hora_inicio" placeholder="Início"  
                                         onChange={(e) => setHora_Inicio(e.target.value)} />       
                                     </div>  
-                                    <div className="col-2">
-                                        <input type="text" className="form-control" name="hora_fim" placeholder="Fim" 
+                                    <div className="col-4">
+                                        <input type="time" className="form-control" name="hora_fim" placeholder="Fim" 
                                         onChange={(e) => setHora_Fim(e.target.value)}/>       
                                     </div> 
                                 </div>
@@ -244,10 +306,11 @@ export function Formulario() {
                         <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                             <h1>Documento enviado!</h1>
                             <h2>Agora escolha o tipo de arquivo que deseja gerar:</h2>
-                            <button style={{marginRight:"5px"}} className="btn btn-outline-danger">PDF</button>
+                            <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
+                                 {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')} <button style={{marginRight:"5px"}} className="btn btn-outline-danger">PDF</button>
+                            </PDFDownloadLink>
                             <CSVLink data={data} headers={headers}><button className="btn btn-outline-success"> CSV</button></CSVLink>
                         </Popup>
-                        
                     </div>     
                 </div>
             </div>  
