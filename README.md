@@ -56,11 +56,11 @@
 
 ## Gif demonstrativo: Gerar ata / Download PDF e CSV
 
-![Video-Formulario](https://user-images.githubusercontent.com/56441534/115169355-2a498f80-a094-11eb-9989-667550b60700.gif)
+![FormDefinitivo](https://user-images.githubusercontent.com/56441534/115173423-a5637380-a09d-11eb-9005-ac801c46a422.gif)
 
 ## Gif demonstrativo: Menu Administrador
 
-![MenuADM](https://user-images.githubusercontent.com/56441534/115169204-beffbd80-a093-11eb-8606-fdd869db54c1.gif)
+https://user-images.githubusercontent.com/56441534/115173488-cfb53100-a09d-11eb-85ab-330acad67b34.mp4
 
 # Tecnologias
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/SASS%20-hotpink.svg?&style=for-the-badge&logo=SASS&logoColor=white%22/%3E"> <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
