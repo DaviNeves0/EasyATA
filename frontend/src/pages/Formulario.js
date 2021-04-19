@@ -215,7 +215,7 @@ export function Formulario() {
 
                 <div className="card">
                     <div className="card-header" style={{textAlign:'center'}}>
-                        <h5>Adionar Participantes</h5>
+                        <h5>Adicionar Participantes</h5>
                     </div>
                     <div className="card-body">
                         <form>                       
@@ -245,7 +245,7 @@ export function Formulario() {
 
                 <div className="card">
                     <div className="card-header" style={{textAlign:'center'}}>
-                        <h5>Adionar Assunto</h5>
+                        <h5>Adicionar Assunto</h5>
                     </div>
                     <div className="card-body">
                         <form>                       

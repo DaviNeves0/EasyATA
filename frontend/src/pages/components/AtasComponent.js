@@ -22,7 +22,7 @@ class AtasComponent extends React.Component{
             <div className="container">
                 <div className="card shadow" style={{margin:'5%'}}>
                 <div className="card-header">
-                    <h4>Usuarios cadastrados:</h4>        
+                    <h4>Atas cadastrados:</h4>        
                 </div>
                 <table className = "table table-striped">
                         <thead>
