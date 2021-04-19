@@ -32,25 +32,25 @@
 # Telas do Sistema EasyATA
 
 ### Inicio
-![Inicio](https://user-images.githubusercontent.com/56441534/115169549-b6f44d80-a094-11eb-8d77-1614147bca64.jpeg)
+![Inicio](https://user-images.githubusercontent.com/56441534/115172413-9aa7df00-a09b-11eb-8636-e3a9e830eae7.jpeg)
 
 ### Formulario 
-![Formulario 01](https://user-images.githubusercontent.com/56441534/115169563-c5db0000-a094-11eb-8207-dde49dcec959.jpeg)
+![Formulário](https://user-images.githubusercontent.com/56441534/115172435-a72c3780-a09b-11eb-9885-72a93cf66ac1.jpeg)
 
 ### Formulario Continuação
-![Formulario 02](https://user-images.githubusercontent.com/56441534/115169572-cd9aa480-a094-11eb-92fe-76dc5789d49a.jpeg)
+![Formulário continuação](https://user-images.githubusercontent.com/56441534/115172457-b317f980-a09b-11eb-97be-537deb1d5e51.jpeg)
 
 ### Download CSV  / PDF
-![Download csv-pdf](https://user-images.githubusercontent.com/56441534/115169588-d8553980-a094-11eb-94a3-9c1f3511979d.jpeg)
+![Download PDF-CSV](https://user-images.githubusercontent.com/56441534/115172475-be6b2500-a09b-11eb-9f56-c3a237c4fd5f.jpeg)
 
 ### Menu Administrador
-![Menu adm](https://user-images.githubusercontent.com/56441534/115169632-f91d8f00-a094-11eb-99fd-86bece4e6a3a.jpeg)
+![Menu adm](https://user-images.githubusercontent.com/56441534/115172521-d5117c00-a09b-11eb-891d-92c463a8ea40.jpeg)
 
 ### Menu Administrador Usuarios
-![Menu adm users](https://user-images.githubusercontent.com/56441534/115169614-ee62fa00-a094-11eb-9a3d-9024d6fafc09.jpeg)
+![Adm user](https://user-images.githubusercontent.com/56441534/115172547-e064a780-a09b-11eb-8cdc-7c5945551b60.jpeg)
 
 ### Menu Administrador Atas
-![Menu adm atas](https://user-images.githubusercontent.com/56441534/115169838-8c56c480-a095-11eb-804b-ddf529dfd0b2.jpeg)
+![Adm atas](https://user-images.githubusercontent.com/56441534/115172572-ebb7d300-a09b-11eb-89ec-67df9b68ab36.jpeg)
 
 # Funcionamento 
 
