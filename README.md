@@ -29,6 +29,39 @@
  
 * Aprimoramento do layout e melhoria do sistema de registro e login da aplicação.
 
+# Telas do Sistema EasyATA
+
+### Inicio
+![Inicio](https://user-images.githubusercontent.com/56441534/115169549-b6f44d80-a094-11eb-8d77-1614147bca64.jpeg)
+
+### Formulario 
+![Formulario 01](https://user-images.githubusercontent.com/56441534/115169563-c5db0000-a094-11eb-8207-dde49dcec959.jpeg)
+
+### Formulario Continuação
+![Formulario 02](https://user-images.githubusercontent.com/56441534/115169572-cd9aa480-a094-11eb-92fe-76dc5789d49a.jpeg)
+
+### Download CSV  / PDF
+![Download csv-pdf](https://user-images.githubusercontent.com/56441534/115169588-d8553980-a094-11eb-94a3-9c1f3511979d.jpeg)
+
+### Menu Administrador
+![Menu adm](https://user-images.githubusercontent.com/56441534/115169632-f91d8f00-a094-11eb-99fd-86bece4e6a3a.jpeg)
+
+### Menu Administrador Usuarios
+![Menu adm users](https://user-images.githubusercontent.com/56441534/115169614-ee62fa00-a094-11eb-9a3d-9024d6fafc09.jpeg)
+
+### Menu Administrador Atas
+![Menu adm atas](https://user-images.githubusercontent.com/56441534/115169838-8c56c480-a095-11eb-804b-ddf529dfd0b2.jpeg)
+
+# Funcionamento 
+
+## Gif demonstrativo: Gerar ata / Download PDF e CSV
+
+![Video-Formulario](https://user-images.githubusercontent.com/56441534/115169355-2a498f80-a094-11eb-9989-667550b60700.gif)
+
+## Gif demonstrativo: Menu Administrador
+
+![MenuADM](https://user-images.githubusercontent.com/56441534/115169204-beffbd80-a093-11eb-8606-fdd869db54c1.gif)
+
 # Tecnologias
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/SASS%20-hotpink.svg?&style=for-the-badge&logo=SASS&logoColor=white%22/%3E"> <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
 
@@ -42,7 +75,4 @@
 <hr>
 
 
-# Telas do Sistema EasyATA
 
-
-# Funcionamento 
