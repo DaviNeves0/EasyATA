@@ -85,9 +85,7 @@ Entregamos a voce e sua empresa um facilitador que permitirá a criação e o re
 ```bash
 $ cd frontend
 $ npm install ou yarn
-```
-     </ul>
-     
+```     
 </ul>
 <ul>
  <li><b>Backend</b></li>
