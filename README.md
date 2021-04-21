@@ -13,6 +13,10 @@
 
 <hr>
 
+# EasyAta
+O EasyAta é um sistema de Gestão de Atas de Reunião com funcionalidades de cadastro, controle de acesso, logs de execução, geração e monitoramento de ata de reunião e assinatura digital.
+Entregamos a voce e sua empresa um facilitador que permitirá a criação e o registro de atas, permitindo que todas as informações relevantes da reunião sejam armazenadas de maneira organizada, limpa e claro de fácil acesso para os proprietários deste documento. Com um controle de acesso portando restrições e privilégios aos níveis de usúarios o EasyAta lhe oferece segurança no monitoramento e gestão dos dados levantados e registrados em sua reunião.
+
 # ⚡Sprints
 | Sprint                                                              | Data de Entrega |
 | ------------------------------------------------------------------- | --------------- |
@@ -22,6 +26,7 @@
 | Sprint 4 | 05 de junho 2021     |
 
 <hr>
+
 
 
 # 💻 Technologies
@@ -68,32 +73,26 @@
 
 # 📓Documentação
 
-## <a href="https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3o.pdf">Documentação geral</a>
-
-## Diagrama Caso de Uso
-
-<a href="https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20caso%20de%20uso.png">Veja o documento</a>
-
-<hr>
-
-## Diagrama de atividades
-
-<a href="https://github.com/DaviNeves0/EasyATA/blob/main/Documenta%C3%A7%C3%A3o/Diagrama%20de%20atividades.png">Veja o documento</a>
-
-<hr>
-
-## Diagrama de Contexto
-
-<a href= "https://raw.githubusercontent.com/DaviNeves0/EasyATA/main/Documenta%C3%A7%C3%A3o/diagrama%20de%20contexto.png">Veja o documento</a>
-
-<hr>
-
+## <a href="https://github.com/DaviNeves0/EasyATA/blob/Register-GenerateMinutes/Print/Documento_de_Visao_EasyATA.docx">Documentação geral</a>
 
 # 🖥Instruções de Instalação
-
 <ul>
-  <li><b>Java Development Kit</b></li>
+  <li><b>Frontend</b></li>
     <ul>
+    <li><b>dependências do frontend</b></li> 
+     Executar o comando.<br/>
+     
+```bash
+$ cd frontend
+$ npm install ou yarn
+```
+     </ul>
+     
+</ul>
+<ul>
+ <li><b>Backend</b></li>
+ <ul>
+  <li><b>Java Development Kit</b></li>
     <li><b>Windows</b></li> Realizar o download na página abaixo.<br/>https://www.oracle.com/java/technologies/javase-downloads.html
     <li><b>Linux</b></li> Executar o comando.<br/>
 
