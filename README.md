@@ -53,9 +53,9 @@ Entregamos a você e sua empresa um facilitador que permitirá a criação e o r
 
 | Sprint 2 - Cadastro de Usuários, Gerar Ata de Reunião, Imprimir Ata | Conclusão |
 | ------------------------------------------------------------------- | --------------- |
-| Cada usuário deve possuir um perfil de acesso e cada perfil define as funcionalidades daquele usuário | - |
-| O usuário será capaz de gerar uma Ata a cada reunião, seguindo o modelo definido. Cada Ata será única | - |
-| Todo usuário poderá cadastrar um modelo de Ata, fazer à impressão da mesma nos modelos PDF e Excel    | - |
+| Cada usuário deve possuir um perfil de acesso e cada perfil define as funcionalidades daquele usuário | OKAY |
+| O usuário será capaz de gerar uma Ata a cada reunião, seguindo o modelo definido. Cada Ata será única | OKAY |
+| Todo usuário poderá cadastrar um modelo de Ata, fazer à impressão da mesma nos modelos PDF e Excel    | OKAY |
 
 <hr>
 
