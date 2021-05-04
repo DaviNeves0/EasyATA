@@ -14,6 +14,9 @@
 <hr>
 
 # EasyAta
+<p align="center">
+ <img src='https://i.imgur.com/Zn4ICGa.png'> </p>
+
 O EasyAta é um sistema de Gestão de Atas de Reunião com funcionalidades de cadastro, controle de acesso, logs de execução, geração e monitoramento de ata de reunião e assinatura digital.</br>
 Entregamos a você e sua empresa um facilitador que permitirá a criação e o registro de atas, permitindo que todas as informações relevantes da reunião sejam armazenadas de maneira organizada, limpa e claro de fácil acesso para os proprietários deste documento. Com um controle de acesso portando restrições e privilégios aos níveis de usuários o EasyAta lhe oferece segurança no monitoramento e gestão dos dados levantados e registrados em sua reunião.
 
