@@ -8,12 +8,18 @@ function Menu() {
 
     var perfil = localStorage.getItem('perfil').replace(/['"]+/g, '');
 
-    var perfilOnline;
+    var perfilAdmin;
+    var perfilGerente;
     if (perfil == "Usuário"){
-        perfilOnline = false;
+      perfilAdmin = false;
+      perfilGerente = false;
+    }   
+    if (perfil == "Gerente"){
+      perfilGerente = true;
     }
     if (perfil == "Admin"){
-      perfilOnline = true;
+      perfilAdmin = true;
+      perfilGerente = true;
     }
     
     return (
@@ -35,7 +41,9 @@ function Menu() {
 
             <li className="nav-item"><a href="/listaDocumento">Lista de ATAs</a></li>
 
-            {perfilOnline && <li className="nav-item"><a href="/administrador">Administrador</a></li>}
+            {perfilGerente && <li className="nav-item"><a href="/situacaoDocumento">Situação das ATAs</a></li>}
+
+            {perfilAdmin && <li className="nav-item"><a href="/administrador">Administrador</a></li>}
             
             <li className="nav-item"><a href="/" onClick={handleSair}>Sair</a></li>
           </ul>

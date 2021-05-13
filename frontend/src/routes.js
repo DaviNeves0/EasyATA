@@ -10,6 +10,7 @@ import Usuarios from './pages/Usuarios';
 import Atas from './pages/Atas';
 import Administrador from './pages/Administrador';
 import ListaDocumento from './pages/ListaDocumento';
+import SituacaoDocumento from './pages/SituacaoDocumento'
 
 export default function Routes(){
     return(
@@ -24,6 +25,7 @@ export default function Routes(){
                 <Route path="/administrador/atas" component={Atas}></Route>
                 <Route path="/administrador" component={Administrador}></Route>
                 <Route path="/listaDocumento" component={ListaDocumento}></Route>
+                <Route path="/situacaoDocumento" component={SituacaoDocumento}></Route>
             </Switch>
         </BrowserRouter>
     )
