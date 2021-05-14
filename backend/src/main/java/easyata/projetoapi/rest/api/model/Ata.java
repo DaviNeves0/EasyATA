@@ -1,4 +1,5 @@
 package easyata.projetoapi.rest.api.model;
+import org.hibernate.annotations.Check;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -23,7 +24,7 @@ public class Ata implements Serializable {
     @Column(nullable = false, length = 50)
     public String hora_fim;
 
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false, length = 200)
     public String local;
 
     //Corpo
@@ -48,7 +49,7 @@ public class Ata implements Serializable {
 
     //corpo2
 
-    @Column(nullable = false, length = 500)
+    @Column(nullable = false, length = 1000)
     public String assunto;
 
     @Column(nullable = false, length = 1000)
@@ -60,7 +61,7 @@ public class Ata implements Serializable {
     @Column(nullable = false, length = 500)
     public String distribuicao;
 
-    @Column(nullable = false, length = 500)
+    @Column(nullable = false, length = 1000)
     public String assinatura;
 
     @Column(nullable = false, length = 1000)
@@ -69,16 +70,15 @@ public class Ata implements Serializable {
     @Column(nullable = false, length = 1000)
     public String representante;
 
+    @Column(nullable = false, length = 60)
+    @Check(constraints = "CHECK (estado IN ('pendente','aprovado','reprovado'))")
+    public String estado = "pendente";
+
     //get & set
 
+    public Long getId() { return id; }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(Long id) { this.id = id; }
 
     public String getData_inicio() { return data_inicio; }
 
@@ -155,4 +155,8 @@ public class Ata implements Serializable {
     public String getRepresentante() { return representante; }
 
     public void setRepresentante(String representante) { this.representante = representante; }
+
+    public String getEstado() { return estado; }
+
+    public void setEstado(String estado) { this.estado = estado; }
 }
