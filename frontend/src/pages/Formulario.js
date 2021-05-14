@@ -1,8 +1,9 @@
 import React, { Component, useState } from 'react'
 import { CSVLink } from "react-csv";
 import "../assets/css/style.css"
+import imagens from "../assets/images/iacitlogo.jpg"
 
-import { Page, Text, View, StyleSheet, PDFDownloadLink, Document} from '@react-pdf/renderer';
+import { Page, Text, View, StyleSheet, PDFDownloadLink, Document, Image} from '@react-pdf/renderer';
 
 import Popup from './components/Popup';
 import api from "../service/api";
@@ -14,50 +15,71 @@ export function Formulario() {
     const style = StyleSheet.create({
         page: {
             backgroundColor: '#fff',
-            fontSize: '8pt'
-        },
-
-        textCenter: {
-            width: '100%',
-            textAlign: 'center',
-            marginTop: '10px',
-            marginBottom: '10px',
+            fontSize: '10pt'
         },
 
         header: {
             height: '80px',
             width: '80%',
-            marginLeft: '10%',
-            marginRight: '10%',
-            marginTop: '5%',
-            backgroundColor: 'grey',
+            margin: '5% 10% 0 10%',
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'flex-start',
+            fontSize: '12pt',
 
             one: {
-                backgroundColor: 'red',
                 height: '100%',
                 width: '30%',
-                
+                textAlign: 'center',
+                padding: '5%'
             },
             two: {
-                backgroundColor: 'green',
                 height: '100%',
                 width: '50%',
+                padding: '5px',
             },
             three: {
-                backgroundColor: 'blue',
                 height: '100%',
                 width: '20%',
-            }         
+            },
         },
 
         projeto: {
             height: '160px',
             width: '80%',
+            margin: "0 10% 0",
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'flex-start',
+            
+            one: {
+                height: '100%',
+                width: '25%',    
+            }
+        },
+
+        pauta: {
+            height: '20px',
+            width: '80%',
+            margin: '15px 10% 0',
+            padding: '4px 0 4px',
+            textAlign: 'center',
+            backgroundColor: 'lightblue',
+
+            one: {
+                height: '25px',
+                width: '80%',
+                margin: "0 10% 0",
+                padding: '4px 0 4px',
+                textAlign: 'center'
+            }
+        },
+
+        assunto: {
+            width: '80%',
             marginLeft: '10%',
             marginRight: '10%',
+            marginTop: '15px',
             backgroundColor: 'grey',
             display: 'flex',
             flexDirection: 'row',
@@ -65,62 +87,30 @@ export function Formulario() {
             
             one: {
                 backgroundColor: 'red',
-                height: '100%',
-                width: '25%',
-                
+                height: '15px',
+                width: '5%',               
             },
             two: {
                 backgroundColor: 'green',
-                height: '100%',
-                width: '25%',
+                height: '15px',
+                width: '70%',
             },
             three: {
                 backgroundColor: 'blue',
-                height: '100%',
-                width: '25%',
+                height: '15px',
+                width: '15%',
             },
             four: {
                 backgroundColor: 'purple',
+                height: '15px',
+                width: '10%',
+            },
+            five: {
+                backgroundColor: 'purple',
                 height: '100%',
-                width: '25%',
-            }  
-        },
-
-        projetoTitle: {
-            height: '15px',
-            width: '80%',
-            marginLeft: '10%',
-            marginRight: '10%',
-            backgroundColor: 'grey'
-        },
-
-        pauta: {
-            height: '20px',
-            width: '80%',
-            marginLeft: '10%',
-            marginRight: '10%',
-            backgroundColor: 'grey',
-            textAlign: 'center',
-            marginTop: '15px',
-
-            one: {
-                height: '25px',
-                width: '80%',
-                marginLeft: '10%',
-                marginRight: '10%',
-                backgroundColor: 'grey',
-                textAlign: 'center',
+                
             }
         },
-
-        obs: {
-            height: '50px',
-            width: '80%',
-            marginLeft: '10%',
-            marginRight: '10%',
-            backgroundColor: 'grey',
-            marginTop: '15px'
-        }
         
 
     });
@@ -134,35 +124,36 @@ export function Formulario() {
                     </View>
                     <View style={style.header.two}>
                         <Text>Data: {data_inicio} - {data_fim}</Text>
-                        <Text>Início: {hora_inicio} Fim: {hora_fim}</Text>
-                        <Text>Local: {local}</Text>
+                        <Text style={{marginTop: '15px'}}>Início: {hora_inicio} Fim: {hora_fim}</Text>
+                        <Text style={{marginTop: '15px'}}>Local: {local}</Text>
                     </View>
                     <View style={style.header.three}>
-                        <Text>LOGO</Text>
+                        <Image src={imagens} style={style.header.img} />
                     </View>
                 </View>
                 
-                <View style={style.textCenter}>
+                <View style={{width: "100%", textAlign: "center", margin: "15px 0 15px", fontSize: "12pt"}}>
                     <Text>ATA DE REUNIÃO</Text>
                 </View>
 
-                <View style={style.projetoTitle}>
+                <View style={{height: "15px", width: "80%", margin: "0 10% 0"}}>
                     <Text>Projeto: {tema}</Text>
                 </View>
+
                 <View style={style.projeto}>
                     <View style={style.projeto.one}>
-                        <Text>Participante(s):</Text>
+                        <Text><b>Participante(s):</b></Text>
                         <Text>{participante}</Text>                               
                     </View>
-                    <View style={style.projeto.two}>
+                    <View style={style.projeto.one}>
                         <Text>Área(s):</Text>
                         <Text>{area}</Text>                         
                     </View>
-                    <View style={style.projeto.three}>
+                    <View style={style.projeto.one}>
                         <Text>E-mail(s):</Text>
                         <Text>{email}</Text>                 
                     </View>
-                    <View style={style.projeto.four}>
+                    <View style={style.projeto.one}>
                         <Text>Telefone(s):</Text>
                         <Text>{telefone}</Text>                  
                     </View>
@@ -175,10 +166,14 @@ export function Formulario() {
                     <Text>{pauta}</Text>
                 </View>
 
-                <View style={style.obs}>
+                <View style={{height: "55px", width: "80%", margin: "15px 10% 0", padding: "5px"}}>
                     <Text>Observações:</Text>
-                    <Text>1 – Deve ser disponibilizada cópia da Ata de Reunião para os participantes e envolvidos;</Text>
-                    <Text>2 – O campo PRAZO define as datas de entrega das solicitações por parte dos responsáveis definidos no campo RESPONSÁVEL.</Text>
+                    <Text style={{marginTop: '5px'}}>1 – Deve ser disponibilizada cópia da Ata de Reunião para os participantes e envolvidos;</Text>
+                    <Text style={{marginTop: '5px'}}>2 – O campo PRAZO define as datas de entrega das solicitações por parte dos responsáveis definidos no campo RESPONSÁVEL.</Text>
+                </View>
+
+                <View style={{heigth: "15px", width: "80%", margin: "15px 10% 0", textAlign: "center"}}>
+                    <Text>DISTRIBUIÇÃO: {area}</Text>
                 </View>
 
                 <Text>Assuntos: </Text>
@@ -187,14 +182,16 @@ export function Formulario() {
                 <Text>{responsavel}</Text>
                 <Text>Prazos: </Text>
                 <Text>{prazo}</Text>
-                <Text>Distribuição: </Text>
-                <Text>{distribuicao}</Text>
+
+
                 <Text>Representantes: </Text>
                 <Text>{representante}</Text>
                 <Text>Nomes: </Text>
                 <Text>{nome}</Text>
                 <Text>Assinaturas: </Text>
                 <Text>{assinatura}</Text>
+
+                
             </Page>
         </Document>
     );

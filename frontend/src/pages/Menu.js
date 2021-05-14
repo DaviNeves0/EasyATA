@@ -41,7 +41,7 @@ function Menu() {
 
             <li className="nav-item"><a href="/listaDocumento">Lista de ATAs</a></li>
 
-            {perfilGerente && <li className="nav-item"><a href="/situacaoDocumento">Situação das ATAs</a></li>}
+            {perfilGerente && <li className="nav-item"><a href="/aprovarDocumento">Aprovar ATAs</a></li>}
 
             {perfilAdmin && <li className="nav-item"><a href="/administrador">Administrador</a></li>}
             

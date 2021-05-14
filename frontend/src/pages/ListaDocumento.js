@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../assets/css/style.css"
-import ListaATA from './components/ListaATA';
+import ListaATA from './components/ListaATA';   
 
 import Menu from './Menu';
 

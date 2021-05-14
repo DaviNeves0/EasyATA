@@ -44,7 +44,7 @@ function Cadastro() {
                                     </div>
                                     <form onSubmit={handleCadastrar}>
                                         <div className="form-group mb-4">
-                                            <input id="nome" type="text" placeholder="Digite seu nome:" className="form-control" 
+                                            <input id="nome" type="text" placeholder="Digite seu nome:" maxLength="60" className="form-control" 
                                             value={nome}
                                             onChange={e => setNome(e.target.value)}
                                             />
@@ -56,13 +56,13 @@ function Cadastro() {
                                             />
                                         </div>
                                         <div className="form-group mb-4">
-                                            <input id="login" type="text" placeholder="Crie um login:" className="form-control" 
+                                            <input id="login" type="text" placeholder="Crie um login:" maxLength="60" className="form-control" 
                                             value={login}
                                             onChange={e => setLogin(e.target.value)}
                                             />
                                         </div>
                                         <div className="form-group mb-4">
-                                            <input id="senha" type="password" placeholder="Crie uma Senha:" className="form-control"
+                                            <input id="senha" type="password" placeholder="Crie uma Senha:" maxLength="20" className="form-control"
                                             value={senha}
                                             onChange={e => setSenha(e.target.value)}
                                             />
