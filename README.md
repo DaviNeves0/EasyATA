@@ -35,33 +35,66 @@
 
 * Níveis de acesso, atualizados e autenticados:
   - Gerente (novidade);
-    - Todas as funcionalidades do Usuário comum;
+    - Todas as funcionalidades do Usuário Comum;
     - Capaz de mudar o estado pendente das atas para 'aprovado' ou 'reprovado'.
   - Administrador (Atualizado):
     - Acesso total as funcionalidades da aplicação;
-    - Sistema de controle de cadastro de Usuários, podendo mudar o nível de qualquer Usuário e excluir usuários cadastrados.
+    - Sistema de controle de cadastro de usuários, podendo agora mudar o nível de qualquer Usuário para Administrador, Gerente ou Usuário Comum.
   
-  Obs: Todos os níveis de usuários são autenticados com um sistema de verificação por token. 
+  Obs: Todos os níveis de usuários são logados, autenticados (sistema de verificação por token) e direcionados para suas respectivas telas. 
 * Monitoramento de atas:
-  - Sistema de listagem de atas com filtros de pesquisa para qualquer “item” das atas. Tornando assim uma pesquisa dinamica para qualquer palavra-chave no documento.
+  - Sistema de listagem de atas com filtros de pesquisa para qualquer “item” das atas, podendo inclusive filtrar a pesquisa por dois ou mais "itens" das atas. Tornando assim uma pesquisa dinamica para qualquer palavra-chave no documento.
 
 
-# Vizualizando funcionalidades entregadas: 
+# Vizualização das funcionalidades entregues nesta sprint: 
 
-## Imagens:
+# `Imagens`:
 
-## `Inserir telas alteradas` <hr>
-`menu gerente` <hr>
-`menu adm` <hr>
-`listagem de atas` <hr>
-`Impressção do pdf`
+## Novo layout do PDF
+# INSERIR NOVO LAYOUT PDF AQUI
 
-## Gifs demonstrativos:
+## Administrador
+### Início
+![inicio adm](https://user-images.githubusercontent.com/56441534/118377508-03538000-b5a4-11eb-97dc-ff635c3571e7.jpeg)
 
-`menu gerente` <hr>
-`menu adm` <hr>
-`listagem de atas` <hr>
-`Impressção do pdf`
+### Controle de cadastro de usuários
+![adm func](https://user-images.githubusercontent.com/56441534/118377563-604f3600-b5a4-11eb-98a2-0926c8415146.jpeg)
+![adm func](https://user-images.githubusercontent.com/56441534/118377533-34cc4b80-b5a4-11eb-9957-01a58c999633.jpeg) 
+
+## Gerente
+### Início
+![inicio gerente](https://user-images.githubusercontent.com/56441534/118377589-85dc3f80-b5a4-11eb-99c6-3266409b17aa.jpeg)
+
+### Gerenciamento de atas
+![Gerente](https://user-images.githubusercontent.com/56441534/118377646-e8cdd680-b5a4-11eb-9622-c9c4a2cf7870.jpeg)
+
+## Usuário comum
+### Início
+![User Inicio](https://user-images.githubusercontent.com/56441534/118377956-ca68da80-b5a6-11eb-8208-39c3670b9b8a.jpeg)
+
+### Monitoramento de atas
+![Listar atas](https://user-images.githubusercontent.com/56441534/118377883-67774380-b5a6-11eb-85d8-29157ef8326f.jpeg)
+
+
+## `Videos demonstrativos:`
+***
+### Login Administrador
+https://user-images.githubusercontent.com/56441534/118378633-84fadc00-b5ab-11eb-957a-e740b1efa9e8.mp4
+
+### Controle de cadastro de usuários
+https://user-images.githubusercontent.com/56441534/118378653-9643e880-b5ab-11eb-8f52-e0abe29d46de.mp4
+
+### Login Gerente
+https://user-images.githubusercontent.com/56441534/118378671-b7a4d480-b5ab-11eb-9c25-eb90cf1fb2b7.mp4
+
+### Gerenciamento de atas
+https://user-images.githubusercontent.com/56441534/118378678-cab7a480-b5ab-11eb-805f-e948958f1b74.mp4
+
+### Login Usuário Comum
+https://user-images.githubusercontent.com/56441534/118378689-e4f18280-b5ab-11eb-9a2b-b0df3e99806c.mp4
+
+### Monitoramento de atas
+https://user-images.githubusercontent.com/56441534/118378710-f89ce900-b5ab-11eb-8628-6040fcfb38d5.mp4
 
 # Tecnologias 💻 
 
