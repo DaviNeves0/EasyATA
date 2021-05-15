@@ -9,8 +9,12 @@ import Menu from './Menu';
 function Usuarios(){
     return(
         <div>
-            <Menu/>
-            <UserComponent/>
+            <div><Menu/></div>
+            <div className="container">
+                <div className="card shadow" style={{margin:'5%'}}>
+                    <UserComponent/>
+                </div>
+            </div>
         </div>
     )
 

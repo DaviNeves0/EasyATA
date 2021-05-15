@@ -95,7 +95,7 @@ class ListaATA extends React.Component{
                 }
             }}
             icons={tableIcons}
-            title="Atas Cadastradas"
+            title="Gerenciar Situação das ATAs"
             columns={[
                 { title: 'ID', field: 'id'},
                 { title: 'Tema', field: 'tema' },

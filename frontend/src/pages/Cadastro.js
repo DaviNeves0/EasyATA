@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 // Importando a api
 import api from "../service/api";
@@ -24,8 +24,8 @@ function Cadastro() {
             senha,
         };
         try{
-        const response = await api.post('usuario', data);
-        alert('Sucesso')
+            const response = await api.post('usuario', data);   
+            alert('Sucesso');
         }catch(err){
             alert('Erro')
         }
@@ -62,7 +62,7 @@ function Cadastro() {
                                             />
                                         </div>
                                         <div className="form-group mb-4">
-                                            <input id="senha" type="password" placeholder="Crie uma Senha:" maxLength="20" className="form-control"
+                                            <input id="senha" type="password" placeholder="Crie uma Senha:" minLength="10" maxLength="20" className="form-control"
                                             value={senha}
                                             onChange={e => setSenha(e.target.value)}
                                             />

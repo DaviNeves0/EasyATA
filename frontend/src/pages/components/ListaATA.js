@@ -67,7 +67,7 @@ class ListaATA extends React.Component{
                 }
             }}
             icons={tableIcons}
-            title="Atas Cadastradas"
+            title="ATAs Cadastradas"
             columns={[
                 { title: 'ID', field: 'id'},
                 { title: 'Tema', field: 'tema' },

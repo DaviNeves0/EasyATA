@@ -81,7 +81,7 @@ class Login extends Component {
                                       />
                                     </div>
                                     <div className="custom-control custom-checkbox mb-4">
-                                      <a href="#" style={{float:"right", fontSize:"12px"}}>Esqueceu a senha?</a>
+                                      {/* <a href="#" style={{float:"right", fontSize:"12px"}}>Esqueceu a senha?</a> */}
                                     </div>
                                     <button type="submit" className="btn btn-primary btn-block">Entrar</button>
                                   
