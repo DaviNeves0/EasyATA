@@ -6,6 +6,7 @@ class AtasService {
     getAtas(){
         return axios.get(ATAS_REST_API_URL);  
     }
+
 }
 
 export default new AtasService();

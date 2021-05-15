@@ -42,7 +42,35 @@ class ListaATA extends React.Component{
         }); 
     }
 
-    
+    handleSuccess(data){
+        let changeStatus = {
+            estado: "Aprovado"
+        }
+        Object.assign(data, changeStatus)
+        console.log(data)
+        
+        axios
+          .put('http://localhost:8080/api/ata', data)
+          .then((response) => {
+            this.setState({ atas: response.data})
+            document.location.reload(true);
+        }); 
+    };
+
+    handleFail(data){
+        let changeStatus = {
+            estado: "Reprovado"
+        }
+        Object.assign(data, changeStatus)
+        console.log(data)
+        
+        axios
+          .put('http://localhost:8080/api/ata', data)
+          .then((response) => {
+            this.setState({ atas: response.data})
+            document.location.reload(true);
+        }); 
+    };
     
     render(){
         return (
@@ -77,10 +105,21 @@ class ListaATA extends React.Component{
                 { title: 'Horário Início', field: 'hora_inicio' },
                 { title: 'Horário Fim', field: 'hora_fim'},
                 { title: 'Local', field: 'local'},
-                { title: 'Status', field: 'estado',  lookup: {'Aprovado' : 'Aprovado', 'Reprovado': 'Reprovado', 'Pendente': 'Pendente'}}
+                { title: 'Status', field: 'estado',  lookup: {'Pendente': 'Pendente', 'Aprovado': 'Aprovado', 'Reprovado': 'Reprovado'}}
               ]}
               data={this.state.atas}
-              
+              actions={[
+                rowData => ({  
+                    icon: () => <DoneIcon style={{ color: "green" }} />,
+                    tooltip: 'Aprovar',
+                    onClick: (event, rowData) => {this.handleSuccess(rowData)}
+                }), 
+                rowData => ({  
+                    icon: () => <Clear style={{ color: "red" }} />,
+                    tooltip: 'Reprovar',
+                    onClick: (event, rowData) => {this.handleFail(rowData)}
+                })
+            ]}
               options={{
                 actionsColumnIndex: -1,
                 filtering: true

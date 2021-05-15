@@ -1,5 +1,4 @@
 import React from 'react';
-import Cadastro from './pages/Cadastro';
 import Routes from './routes';
 
 

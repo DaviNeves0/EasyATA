@@ -71,8 +71,8 @@ public class Ata implements Serializable {
     public String representante;
 
     @Column(nullable = false, length = 60)
-    @Check(constraints = "CHECK (estado IN ('pendente','aprovado','reprovado'))")
-    public String estado = "pendente";
+    @Check(constraints = "CHECK (estado IN ('Pendente','Aprovado','Reprovado'))")
+    public String estado = "Pendente";
 
     //get & set
 

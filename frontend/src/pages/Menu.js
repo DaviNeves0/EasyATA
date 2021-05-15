@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "../assets/css/menu.scss"
 
 function Menu() {
@@ -10,14 +10,14 @@ function Menu() {
 
     var perfilAdmin;
     var perfilGerente;
-    if (perfil == "Usuário"){
+    if (perfil === "Usuário"){
       perfilAdmin = false;
       perfilGerente = false;
     }   
-    if (perfil == "Gerente"){
+    if (perfil === "Gerente"){
       perfilGerente = true;
     }
-    if (perfil == "Admin"){
+    if (perfil === "Admin"){
       perfilAdmin = true;
       perfilGerente = true;
     }

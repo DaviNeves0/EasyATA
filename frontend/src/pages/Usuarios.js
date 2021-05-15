@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React from 'react'
 import "../assets/css/style.css"
 
 import UserComponent from './components/UserComponent.js';
