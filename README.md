@@ -50,8 +50,9 @@
 
 # `Imagens`:
 
-## Novo layout do PDF
-# INSERIR NOVO LAYOUT PDF AQUI
+## Layout do PDF - Prévia
+# A implementação do layout está sendo desenvolvida
+# https://i.imgur.com/uHQxn98.png
 
 ## Administrador
 ### Início
