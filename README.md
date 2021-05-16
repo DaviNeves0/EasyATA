@@ -25,7 +25,7 @@ Entregamos a você e sua empresa um facilitador que permitirá a criação e o r
 | ------------------------------------------------------------------- | --------------- |
 | [Sprint 1](https://github.com/DaviNeves0/EasyATA/tree/Login-RegisterDB) | 28 de março 2021     |
 | [Sprint 2](https://github.com/DaviNeves0/EasyATA/tree/Register-GenerateMinutes/Print) | 18 de abrl  2021     |
-| Sprint 3 | 15 de maio  2021     |
+| [Sprint 3](https://github.com/DaviNeves0/EasyATA/tree/docList) | 16 de maio  2021     |
 | Sprint 4 | 05 de junho 2021     |
 
 <hr>
