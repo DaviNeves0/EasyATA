@@ -24,8 +24,8 @@
   - Correção da descrição do Diagrama de caso de uso;
   - Correção do título do diagrama de implantação.
 
-* Impressão do pdf:
-   - Pdf gerado pela aplicação mais limpo, organizado e intuitivo.
+* Impressão do pdf(em desenvolvimento):
+   - Pdf impresso pelo EasyAta agora mais limpo, organizado e intuitivo.
 
 * Estado das atas:
   - Atas classificadas em 3 estados:
@@ -51,8 +51,8 @@
 # `Imagens`:
 
 ## Layout do PDF - Prévia
-# A implementação do layout está sendo desenvolvida
-# https://i.imgur.com/uHQxn98.png
+- Implementação em desenvolvimento, estado atual: <hr>
+![layout_pdf](https://i.imgur.com/uHQxn98.png)
 
 ## Administrador
 ### Início
