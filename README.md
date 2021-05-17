@@ -61,7 +61,7 @@ Entregamos a você e sua empresa um facilitador que permitirá a criação e o r
 
 | Sprint 3 - Monitorar Ata de Reunião                                 | Conclusão |
 | ------------------------------------------------------------------- | --------------- |
-| Exibir uma listagem com a situação atual das Atas. O usuário poderá filtrar a pesquisa por Estado, por Data de Criação da Ata e por Pauta|   -   |
+| Exibir uma listagem com a situação atual das Atas. O usuário poderá filtrar a pesquisa por Estado, por Data de Criação da Ata e por Pauta| OKAY |
 
 <hr>
 
