@@ -76,7 +76,7 @@ Entregamos a você e sua empresa um facilitador que permitirá a criação e o r
 
 # 📓Documentação
 
-## <a href="https://github.com/DaviNeves0/EasyATA/blob/Register-GenerateMinutes/Print/Documento_de_Visao_EasyATA.docx">Documentação geral</a>
+## <a href="https://github.com/DaviNeves0/EasyATA/blob/docList/Documento%20de%20Visao%20EasyATA.docx">Documentação geral</a>
 
 # 🖥Instruções de Instalação
 <ul>
