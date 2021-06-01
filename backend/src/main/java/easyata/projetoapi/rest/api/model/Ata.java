@@ -3,6 +3,7 @@ import org.hibernate.annotations.Check;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Set;
 
 @Table(name = "dados_ata")
 @Entity
@@ -11,6 +12,9 @@ public class Ata implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long id;
+
+    @OneToMany(mappedBy = "ata")
+    private Set<AtaRevisao> ataRevisaos;
 
     @Column(nullable = false, length = 50)
     public String data_inicio;
