@@ -3,7 +3,8 @@ import org.hibernate.annotations.Check;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 @Table(name = "dados_ata")
 @Entity
@@ -14,7 +15,10 @@ public class Ata implements Serializable {
     public Long id;
 
     @OneToMany(mappedBy = "ata")
-    private Set<AtaRevisao> ataRevisaos;
+    private List<AtaRevisao> ataRevisoes;
+
+    @OneToMany(mappedBy = "ata")
+    private List<Participantes> participantes;
 
     @Column(nullable = false, length = 50)
     public String data_inicio;
@@ -35,18 +39,6 @@ public class Ata implements Serializable {
 
     @Column(nullable = false, length = 1000)
     public String tema;
-
-    @Column(nullable = false, length = 1000)
-    public String participante;
-
-    @Column(nullable = false, length = 1000)
-    public String area;
-
-    @Column(nullable = false, length = 1000)
-    public String email;
-
-    @Column(nullable = false, length = 1000)
-    public String telefone;
 
     @Column(nullable = false, length = 100)
     public String pauta;
@@ -108,26 +100,6 @@ public class Ata implements Serializable {
 
     public void setTema(String tema) { this.tema = tema; }
 
-    public String getParticipante() { return participante; }
-
-    public void setParticipante(String participante) { this.participante = participante; }
-
-    public String getArea() { return area; }
-
-    public void setArea(String area) { this.area = area; }
-
-    public String getEmail() { return email; }
-
-    public void setEmail(String email) { this.email = email; }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
     public String getPauta() { return pauta; }
 
     public void setPauta(String pauta) { this.pauta = pauta; }
@@ -163,4 +135,6 @@ public class Ata implements Serializable {
     public String getEstado() { return estado; }
 
     public void setEstado(String estado) { this.estado = estado; }
+
+
 }
