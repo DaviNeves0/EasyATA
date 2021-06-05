@@ -16,86 +16,67 @@
 
 <hr>
 
-# Entrega Sprint 3 ⚡
+# Entrega Sprint 4 ⚡
 ## Entre as funcionalidades dessa entrega estão:
 
-* Atualização da documentação:
-  - Atualização de itens compativeis com a entrega;
-  - Correção da descrição do Diagrama de caso de uso;
-  - Correção do título do diagrama de implantação.
+### Revisão de ata
+Usuário poderá pedir a revisão de uma ata existente, devendo informar o assunto da revisão Responsável da Revisão e Prazo da Revisão. Revisões pode ser incluídas, alteradas e excluídas quantas vezes forem necessárias.
 
-* Impressão do pdf(em desenvolvimento):
-   - Pdf impresso pelo EasyAta agora mais limpo, organizado e intuitivo.
+Somente atas novas e atas reprovadas podem ser solicitadas para revisão e consequentemente aprovadas ou não pelo Gerente
+
+### Assinatura unica
+Somente o administradir pode assinar uma ata dar o veredito final sobre os pontos levantados e discutidos naquela reunião.
+
+### 
+### Atualizações
+
+* Documentação:
+  - Atualização de itens compativeis com a entrega;
+
 
 * Estado das atas:
   - Atas classificadas em 3 estados:
-    1. Pendente: Ata sem avaliação;
-    2. Aprovado: Ata aprovada;
-    3. Reprovado: Ata reprovada.
+    1. Nova: Ata enviada ao banco de dados e sem avaliação/revisão;
+    2. Pendente: Ata solicitada para revisão, aguardando a Avaliação do Gerente ou Administrador;
+    3. Aprovado: Ata aprovada pelo Gerente ou Administrador;
+    4. Reprovado: Ata reprovada pelo Gerente ou Administrador;
+    5. Assinada: Estado final da ata, após ser aprovada ela pode ser assinada, encerrando assim o "ciclo de vida" da ata de reunião.
 
-* Níveis de acesso, atualizados e autenticados:
-  - Gerente (novidade);
-    - Todas as funcionalidades do Usuário Comum;
-    - Capaz de mudar o estado pendente das atas para 'aprovado' ou 'reprovado'.
-  - Administrador (Atualizado):
-    - Acesso total as funcionalidades da aplicação;
-    - Sistema de controle de cadastro de usuários, podendo agora mudar o nível de qualquer Usuário para Administrador, Gerente ou Usuário Comum.
+* Níveis de acesso:
+  - Usuário Comum:
+    - Solicita Revisão para atas novas e atas ja reprovadas.
+    
+  - Administrador:
+    - Excluisão de usuários diretamente do banco de dados.
   
-  Obs: Todos os níveis de usuários são logados, autenticados (sistema de verificação por token) e direcionados para suas respectivas telas. 
-* Monitoramento de atas:
-  - Sistema de listagem de atas com filtros de pesquisa para qualquer “item” das atas, podendo inclusive filtrar a pesquisa por dois ou mais "itens" das atas. Tornando assim uma pesquisa dinamica para qualquer palavra-chave no documento.
+Obs: Reforçando que, todas as funcionalidades do usuário comum e Gerente estão disponíveis para usuários com nível Administrador.
+
+### Melhorias
+ - Apenas atas pendentes são exibidas para o Gerente avaliar;
+ - Apenas atas aprovadas são exibidas para o Administrador avaliar.
+
 
 
 # Vizualização das funcionalidades entregues nesta sprint: 
 
 # `Imagens`:
 
-## Layout do PDF - Prévia
-- Implementação em desenvolvimento, estado atual: <hr>
-![layout_pdf](https://i.imgur.com/uHQxn98.png)
-
 ## Administrador
-### Início
-![inicio adm](https://user-images.githubusercontent.com/56441534/118377508-03538000-b5a4-11eb-97dc-ff635c3571e7.jpeg)
-
-### Controle de cadastro de usuários
-![adm func](https://user-images.githubusercontent.com/56441534/118377563-604f3600-b5a4-11eb-98a2-0926c8415146.jpeg)
-![adm func](https://user-images.githubusercontent.com/56441534/118377533-34cc4b80-b5a4-11eb-9957-01a58c999633.jpeg) 
-
-## Gerente
-### Início
-![inicio gerente](https://user-images.githubusercontent.com/56441534/118377589-85dc3f80-b5a4-11eb-99c6-3266409b17aa.jpeg)
-
-### Gerenciamento de atas
-![Gerente](https://user-images.githubusercontent.com/56441534/118377646-e8cdd680-b5a4-11eb-9622-c9c4a2cf7870.jpeg)
+### Menu de assinaturas
 
 ## Usuário comum
-### Início
-![User Inicio](https://user-images.githubusercontent.com/56441534/118377956-ca68da80-b5a6-11eb-8208-39c3670b9b8a.jpeg)
-
-### Monitoramento de atas
-![Listar atas](https://user-images.githubusercontent.com/56441534/118377883-67774380-b5a6-11eb-85d8-29157ef8326f.jpeg)
+### Revisão de atas
 
 
 ## `Videos demonstrativos:`
 ***
-### Login Administrador
-https://user-images.githubusercontent.com/56441534/118378633-84fadc00-b5ab-11eb-957a-e740b1efa9e8.mp4
 
-### Controle de cadastro de usuários
-https://user-images.githubusercontent.com/56441534/118378653-9643e880-b5ab-11eb-8f52-e0abe29d46de.mp4
+## Administrador
+### Menu de assinaturas
 
-### Login Gerente
-https://user-images.githubusercontent.com/56441534/118378671-b7a4d480-b5ab-11eb-9c25-eb90cf1fb2b7.mp4
+## Usuário comum
+### Revisão de atas
 
-### Gerenciamento de atas
-https://user-images.githubusercontent.com/56441534/118378678-cab7a480-b5ab-11eb-805f-e948958f1b74.mp4
-
-### Login Usuário Comum
-https://user-images.githubusercontent.com/56441534/118378689-e4f18280-b5ab-11eb-9a2b-b0df3e99806c.mp4
-
-### Monitoramento de atas
-https://user-images.githubusercontent.com/56441534/118378710-f89ce900-b5ab-11eb-8628-6040fcfb38d5.mp4
 
 # Tecnologias 💻 
 
