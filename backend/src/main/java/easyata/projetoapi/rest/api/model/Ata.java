@@ -14,12 +14,6 @@ public class Ata implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long id;
 
-    @OneToMany(mappedBy = "ata")
-    private List<AtaRevisao> ataRevisoes;
-
-    @OneToMany(mappedBy = "ata")
-    private List<Participantes> participantes;
-
     @Column(nullable = false, length = 50)
     public String data_inicio;
 

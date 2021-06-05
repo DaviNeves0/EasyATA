@@ -15,9 +15,8 @@ public class AtaRevisao implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "ata_id")
-    private Ata ata;
+    @Column(nullable = false, length = 50)
+    public Long id_ata;
 
     @Column(nullable = false, length = 50)
     public String assunto;
@@ -36,13 +35,9 @@ public class AtaRevisao implements Serializable {
         this.id = id;
     }
 
-    public Ata getAta() {
-        return ata;
-    }
+    public Long getId_ata() { return id_ata; }
 
-    public void setAta(Ata ata) {
-        this.ata = ata;
-    }
+    public void setId_ata(Long id_ata) { this.id_ata = id_ata; }
 
     public String getAssunto() {
         return assunto;
