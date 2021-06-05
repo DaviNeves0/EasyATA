@@ -26,7 +26,7 @@ Entregamos a você e sua empresa um facilitador que permitirá a criação e o r
 | [Sprint 1](https://github.com/DaviNeves0/EasyATA/tree/Login-RegisterDB) | 28 de março 2021     |
 | [Sprint 2](https://github.com/DaviNeves0/EasyATA/tree/Register-GenerateMinutes/Print) | 18 de abrl  2021     |
 | [Sprint 3](https://github.com/DaviNeves0/EasyATA/tree/docList) | 16 de maio  2021     |
-| Sprint 4 | 05 de junho 2021     |
+| [Sprint 4](https://github.com/DaviNeves0/EasyATA/blob/docList/README.md) | 05 de junho 2021 |
 
 <hr>
 
@@ -68,7 +68,7 @@ Entregamos a você e sua empresa um facilitador que permitirá a criação e o r
 
 | Sprint 4 - Adicionar Revisão:                                       | Conclusão |
 | ------------------------------------------------------------------- | --------------- |
-|  Usuário poderá pedir a revisão de uma ata existente, devendo informar o assunto da revisão Responsável da Revisão e Prazo da Revisão. Revisões pode ser incluídas, alteradas e excluídas quantas vezes forem necessárias|   -   |
+|  Usuário poderá pedir a revisão de uma ata existente, devendo informar o assunto da revisão Responsável da Revisão e Prazo da Revisão. Revisões pode ser incluídas, alteradas e excluídas quantas vezes forem necessárias| OKAY |
 
 
 
