@@ -38,6 +38,17 @@ public class Ata implements Serializable {
     public String pauta;
 
     //corpo2
+    @Column(nullable = false, length = 1000)
+    public String participante;
+
+    @Column(nullable = false, length = 1000)
+    public String area;
+
+    @Column(nullable = false, length = 1000)
+    public String email;
+
+    @Column(nullable = false, length = 1000)
+    public String telefone;
 
     @Column(nullable = false, length = 1000)
     public String assunto;
@@ -93,6 +104,26 @@ public class Ata implements Serializable {
     public String getTema() { return tema; }
 
     public void setTema(String tema) { this.tema = tema; }
+
+    public String getParticipante() { return participante; }
+
+    public void setParticipante(String participante) { this.participante = participante; }
+
+    public String getArea() { return area; }
+
+    public void setArea(String area) { this.area = area; }
+
+    public String getEmail() { return email; }
+
+    public void setEmail(String email) { this.email = email; }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
 
     public String getPauta() { return pauta; }
 

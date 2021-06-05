@@ -8,13 +8,16 @@ function Administrador() {
         <div>
             <div><Menu/></div>
             <div className="container">
-                <div className="card shadow" style={{margin:'5% 25% 0', width: '50%'}}>
+                <div className="card shadow" style={{margin:'5% 10% 0', width: '80%'}}>
                     <div className="card-header">
                         <h4>Painel de controle</h4>        
                     </div>  
-                    <div class="row" style={{padding: '10px 20% 10px'}}>
+                    <div class="row" style={{padding: '10px 10% 10px'}}>
                         <div class="col">
                             <a href="/administrador/usuarios" class="btn btn-dark" style={{display: 'block'}} role="button" aria-pressed="true">Usuários Cadastrados</a>
+                        </div>
+                        <div class="col">
+                            <a href="/assinatura" class="btn btn-dark" style={{display: 'block'}} role="button" aria-pressed="true">Assinar ATAs</a>
                         </div>
                     </div>                      
                 </div>  

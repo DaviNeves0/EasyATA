@@ -15,6 +15,7 @@ import FilterListIcon from '@material-ui/icons/FilterList';
 import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import PersonIcon from '@material-ui/icons/Person';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const tableIcons = {
     Clear: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
@@ -30,6 +31,8 @@ const tableIcons = {
     Admin: forwardRef((props, ref) => <PermContactCalendarIcon {...props} ref={ref} />),
     Gerente: forwardRef((props, ref) => <SupervisorAccountIcon {...props} ref={ref} />),
     Usuario: forwardRef((props, ref) => <PersonIcon {...props} ref={ref} />),
+    DeleteUser: forwardRef((props, ref) => <DeleteIcon {...props} ref={ref} />),
+
 };
 
 
@@ -60,13 +63,16 @@ class UserComponent extends React.Component{
           .then((response) => {
             this.setState({ users: response.data})
             document.location.reload(true);
-        });
+        }); 
+    };
+
+    handleUserDelete(data){
         axios
-          .put('http://localhost:8080/api/perfil/atualizar', data)
+          .delete('http://localhost:8080/api/usuario/deletar', data)
           .then((response) => {
             this.setState({ users: response.data})
             document.location.reload(true);
-        }); 
+        });
     };
 
     handleManager(data){
@@ -82,12 +88,7 @@ class UserComponent extends React.Component{
             this.setState({ users: response.data})
             document.location.reload(true);
         }); 
-        axios
-          .put('http://localhost:8080/api/perfil/atualizar', data)
-          .then((response) => {
-            this.setState({ users: response.data})
-            document.location.reload(true);
-        }); 
+         
     };
 
     handleUser(data){
@@ -99,12 +100,6 @@ class UserComponent extends React.Component{
         
         axios
           .put('http://localhost:8080/api/usuario/atualizar', data)
-          .then((response) => {
-            this.setState({ users: response.data})
-            document.location.reload(true);
-        }); 
-        axios
-          .put('http://localhost:8080/api/perfil/atualizar', data)
           .then((response) => {
             this.setState({ users: response.data})
             document.location.reload(true);
@@ -157,6 +152,11 @@ class UserComponent extends React.Component{
                     icon: () => <PersonIcon />,
                     tooltip: 'Usuário',
                     onClick: (event, rowData) => {this.handleUser(rowData)}
+                }),
+                rowData => ({  
+                    icon: () => <DeleteIcon />,
+                    tooltip: 'Excluir',
+                    onClick: (event, rowData) => {this.handleUserDelete(rowData)}
                 })
             ]}
               options={{

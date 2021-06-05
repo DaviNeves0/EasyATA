@@ -51,6 +51,7 @@
   },
   "proxy": "http://localhost:8080/",
   "devDependencies": {
+    "local-ip-url": "^1.0.3",
     "react-app-rewired": "^2.1.6"
   }
 }

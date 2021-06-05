@@ -10,6 +10,9 @@ import Usuarios from './pages/Usuarios';
 import Administrador from './pages/Administrador';
 import ListaDocumento from './pages/ListaDocumento';
 import AprovarDocumento from './pages/AprovarDocumento'
+import Teste from './pages/components/Teste';
+import Revisao from './pages/components/Revisao'
+import Assinatura from './pages/components/Assinatura';
 
 export default function Routes(){
     return(
@@ -24,6 +27,10 @@ export default function Routes(){
                 <Route path="/administrador" component={Administrador}></Route>
                 <Route path="/listaDocumento" component={ListaDocumento}></Route>
                 <Route path="/aprovarDocumento" component={AprovarDocumento}></Route>
+                <Route path="/teste" component={Teste}></Route>
+                <Route path="/revisao" component={Revisao}></Route>
+                <Route path="/assinatura" component={Assinatura}></Route>
+                
             </Switch>
         </BrowserRouter>
     )

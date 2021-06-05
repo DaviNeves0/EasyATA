@@ -1,17 +1,18 @@
-import React, { Component, useState } from 'react'
+import React, { useState } from 'react'
 import { CSVLink } from "react-csv";
-import "../assets/css/style.css"
-import imagens from "../assets/images/iacitlogo.jpg"
+import "../../assets/css/style.css"
+import imagens from "../../assets/images/iacitlogo.jpg"
 
 import { Page, Text, View, StyleSheet, PDFDownloadLink, Document, Image} from '@react-pdf/renderer';
 
-import Popup from './components/Popup';
-import api from "../service/api";
+import Popup from '../components/Popup';
+import api from "../../service/api";
+import Menu from '../Menu'
+import  {dadosRevisao} from './ListaATA'
 
-import Menu from './Menu';
 
-export function Formulario() {
-
+export function Revisao() {
+    let dados ={}
     const style = StyleSheet.create({
         page: {
             backgroundColor: '#fff',
@@ -220,35 +221,37 @@ export function Formulario() {
 
     ];
 
-    const [tema, setTema] = useState("");
-    const [pauta, setPauta] = useState("");
-    const [data_inicio, setData_Inicio] = useState("");
-    const [data_fim, setData_Fim] = useState("");
-    const [hora_inicio, setHora_Inicio] = useState("");
-    const [hora_fim, setHora_Fim] = useState("");
-    const [local, setLocal] = useState("");
-    const [participante, setParticipante] = useState("");
-    const [area, setArea] = useState("");
-    const [email, setEmail] = useState("");
-    const [telefone, setTelefone] = useState("");
-    const [assunto, setAssunto] = useState("");
-    const [responsavel, setResponsavel] = useState("");
-    const [prazo, setPrazo] = useState("");
-    const [distribuicao, setDistribuicao] = useState("");
-    const [representante, setRepresentante] = useState("");
-    const [nome, setNome] = useState("");
-    const [assinatura, setAssinatura] = useState("");
-    const [estado, setEstado] = useState("")
-    const [data, setData] = useState([]);
+    const [id, setId] = useState(dadosRevisao.id)
+    const [tema, setTema] = useState(dadosRevisao.tema);
+    const [pauta, setPauta] = useState(dadosRevisao.pauta);
+    const [data_inicio, setData_Inicio] = useState(dadosRevisao.data_inicio);
+    const [data_fim, setData_Fim] = useState(dadosRevisao.data_fim);
+    const [hora_inicio, setHora_Inicio] = useState(dadosRevisao.hora_inicio);
+    const [hora_fim, setHora_Fim] = useState(dadosRevisao.hora_fim);
+    const [local, setLocal] = useState(dadosRevisao.local);
+    const [participante, setParticipante] = useState(dadosRevisao.participante);
+    const [area, setArea] = useState(dadosRevisao.area);
+    const [email, setEmail] = useState(dadosRevisao.email);
+    const [telefone, setTelefone] = useState(dadosRevisao.telefone);
+    const [assunto, setAssunto] = useState(dadosRevisao.assunto);
+    const [responsavel, setResponsavel] = useState(dadosRevisao.responsavel);
+    const [prazo, setPrazo] = useState(dadosRevisao.prazo);
+    const [distribuicao, setDistribuicao] = useState(dadosRevisao.distribuicao);
+    const [representante, setRepresentante] = useState(dadosRevisao.representante);
+    const [nome, setNome] = useState(dadosRevisao.nome);
+    const [assinatura, setAssinatura] = useState(dadosRevisao.assinatura);
 
+    const [data, setData] = useState([]);
+    
     async function handleCadastrar(e){
 
-        setData([...data, {tema, pauta, data_inicio, data_fim, 
+        setData([...data, {id, tema, pauta, data_inicio, data_fim, 
             hora_inicio, hora_fim, local, participante, 
             area, email, telefone, assunto, responsavel, 
-            prazo, distribuicao, representante, nome, assinatura, estado}]);
+            prazo, distribuicao, representante, nome, assinatura}]);
 
-        const dados = {
+        dados = {
+            id,
             tema, 
             pauta,
             data_inicio,
@@ -267,11 +270,12 @@ export function Formulario() {
             representante,
             nome,
             assinatura,
-            estado: 'Nova'
+            estado:'Pendente'
         };
 
         try{
-        const response = await api.post('saveAta', dados);
+            console.log(dados)
+        const response = await api.put('ata', dados);
         alert('Sucesso!')
         }catch(err){
             alert('Erro')
@@ -280,12 +284,12 @@ export function Formulario() {
 
     return (
         <div>
-            <Menu/>
-            <div className="container">       
+            <Menu />
+            <div className="container" >       
             
             <div className="card shadow" style={{margin:'5%'}}>
                 <div className="card-header">
-                    <h4>Formulário <small>da ATA</small></h4>        
+                    <h4>ATA</h4>        
                 </div>
                 <div className="card-body">
                     <form>                       
@@ -293,23 +297,23 @@ export function Formulario() {
                                 <div className="form-group row">
                                     <div className="col-2">Tema da Reunião:</div>
                                     <div className="col-4">
-                                        <input type="text" className="form-control" name="tema" id="tema"
-                                         onChange={(e) => setTema(e.target.value)}  />       
+                                        <input type="text" className="form-control" name="tema" id="tema" value={tema}
+                                        onChange={(e) => setTema(e.target.value)} /> 
                                     </div>  
                                     <div className="col-2">Pauta da Reunião:</div>
                                     <div className="col-4">
-                                        <input type="text" className="form-control" name="pauta"
+                                        <input type="text" className="form-control" name="pauta" value={pauta}
                                          onChange={(e) => setPauta(e.target.value)}  />       
                                     </div>  
                                 </div> 
                                 <div className="form-group row">
                                     <div className="col-2">Data:</div>
                                     <div className="col-4">
-                                        <input type="date" className="form-control" name="data_inicio" placeholder="Início" 
+                                        <input type="date" className="form-control" name="data_inicio" value={data_inicio} 
                                          onChange={(e) => setData_Inicio(e.target.value)} />       
                                     </div>  
                                     <div className="col-4">
-                                        <input type="date" className="form-control" name="data_fim" placeholder="Fim" 
+                                        <input type="date" className="form-control" name="data_fim" value={data_fim} 
                                          onChange={(e) => setData_Fim(e.target.value)}/>       
                                     </div>  
                                 </div>
@@ -317,52 +321,46 @@ export function Formulario() {
                                 <div className="form-group row">
                                 <div className="col-2">Horário:</div>
                                     <div className="col-4">
-                                        <input type="time" className="form-control" name="hora_inicio" placeholder="Início"  
+                                        <input type="time" className="form-control" name="hora_inicio" value={hora_inicio}  
                                         onChange={(e) => setHora_Inicio(e.target.value)} />       
                                     </div>  
                                     <div className="col-4">
-                                        <input type="time" className="form-control" name="hora_fim" placeholder="Fim" 
+                                        <input type="time" className="form-control" name="hora_fim" value={hora_fim}
                                         onChange={(e) => setHora_Fim(e.target.value)}/>       
                                     </div> 
                                 </div>
                                 <div className="form-group row">
                                     <div className="col-2">Local da Reunião:</div>
                                     <div className="col-4">
-                                        <input type="text" className="form-control" name="local" 
+                                        <input type="text" className="form-control" name="local" value={local} 
                                          onChange={(e) => setLocal(e.target.value)}/>       
                                     </div>                    
                                 </div>
                             </div>
                     </form>                                       
                 </div>
-
-                <div className="alert alert-danger" role="alert">
-                    Todos os campos abaixo devem ser preenchidos da seguinte forma:
-                    <b> Item1, Item2, Item3...</b> 
-                </div>
-
                 <div className="card">
                     <div className="card-header" style={{textAlign:'center'}}>
-                        <h5>Adicionar Participantes</h5>
+                        <h5>Participantes</h5>
                     </div>
                     <div className="card-body">
                         <form>                       
                             <div>
                                     <div className="form-group row">                                      
                                         <div className="col">
-                                            <textarea type="text" className="form-control" name="participante" placeholder="Participante1, Participante2..." required  
+                                            <textarea type="text" className="form-control" name="participante" value={participante}  
                                             onChange={(e) => setParticipante(e.target.value)}/>       
                                         </div> 
                                         <div className="col">
-                                            <textarea type="text" className="form-control" name="area" placeholder="Área1, Área2..." 
+                                            <textarea type="text" className="form-control" name="area" value={area} 
                                             onChange={(e) => setArea(e.target.value)}/>       
                                         </div>
                                         <div className="col">
-                                            <textarea type="text" className="form-control" name="email" placeholder="E-mail1, E-mail2..." 
+                                            <textarea type="text" className="form-control" name="email" value={email} 
                                             onChange={(e) => setEmail(e.target.value)}/>       
                                         </div> 
                                         <div className="col">
-                                            <textarea type="text" className="form-control" name="telefone" placeholder="Telefone1, Telefone2"
+                                            <textarea type="text" className="form-control" name="telefone" value={telefone}
                                             onChange={(e) => setTelefone(e.target.value)} />       
                                         </div>                                     
                                     </div>             
@@ -373,26 +371,26 @@ export function Formulario() {
 
                 <div className="card">
                     <div className="card-header" style={{textAlign:'center'}}>
-                        <h5>Adicionar Assunto</h5>
+                        <h5>Assuntos</h5>
                     </div>
                     <div className="card-body">
                         <form>                       
                             <div>
                                     <div className="form-group row">                                      
                                         <div className="col">
-                                            <textarea className="form-control" name="assunto" placeholder="Assunto1, Assunto2" 
+                                            <textarea className="form-control" name="assunto" value={assunto} 
                                             onChange={(e) => setAssunto(e.target.value)} />       
                                         </div>
                                         <div className="col">
-                                            <textarea type="text" className="form-control" name="responsavel" placeholder="Responsável1, Responsável2" 
+                                            <textarea type="text" className="form-control" name="responsavel" value={responsavel} 
                                             onChange={(e) => setResponsavel(e.target.value)}/>       
                                         </div> 
                                         <div className="col">
-                                            <textarea type="text" className="form-control" name="prazo" placeholder="Prazo1, Prazo2" 
+                                            <textarea type="text" className="form-control" name="prazo" value={prazo} 
                                             onChange={(e) => setPrazo(e.target.value)}/>       
                                         </div> 
                                         <div className="col">
-                                            <textarea type="text" className="form-control" name="distribuicao" placeholder="Distribuição1, Distribuição2" 
+                                            <textarea type="text" className="form-control" name="distribuicao" value={distribuicao} 
                                             onChange={(e) => setDistribuicao(e.target.value)} />       
                                         </div>              
                                     </div>             
@@ -401,35 +399,36 @@ export function Formulario() {
                     </div>    
                 </div>
 
-                {/* <div className="card">
+                <div className="card">
                     <div className="card-header" style={{textAlign:'center'}}>
-                        <h5>Assinaturas</h5>
+                        <h5>Dados da revisão</h5>
                     </div>
                     <div className="card-body">
                         <form>                       
                             <div>
                                     <div className="form-group row">                                      
                                         <div className="col">
-                                            <textarea type="text" className="form-control" name="representante" placeholder="Representante1, Representante2"  
-                                           onChange={(e) => setRepresentante(e.target.value)}/>       
+                                            <input type="text" className="form-control" name="assunto_revisao" placeholder="Assunto da revisão"  
+                                           />       
                                         </div> 
                                         <div className="col">
-                                            <textarea type="text" className="form-control" name="nome" placeholder="Nome1, Nome2" 
-                                           onChange={(e) => setNome(e.target.value)}/>       
+                                            <input type="text" className="form-control" name="responsavel_revisao" placeholder="Responsável da revisão" 
+                                           />       
                                         </div> 
                                         <div className="col">
-                                            <textarea type="text" className="form-control" name="assinatura" placeholder="Assinatura, Assinatura2" 
-                                            onChange={(e) => setAssinatura(e.target.value)}/>       
+                                            <input type="date" className="form-control" name="prazo_revisao" placeholder="Prazo da revisão" 
+                                            />       
                                         </div>             
                                     </div>             
                                 </div>                                                                                   
                         </form>
                     </div>    
-                </div> */}
+                </div>
+
 
                 <div className="card-body">
                     <div className="row justify-content-center align-items-center">
-                    <button className='btn btn-success' onClick={() => {handleCadastrar(); setButtonPopup(true);}}>Enviar ATA</button>
+                    <button className='btn btn-success' onClick={() => {handleCadastrar(); setButtonPopup(true);}}>Enviar Revisão</button>
 
                         <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                             <h1>Documento enviado!</h1>
@@ -446,4 +445,4 @@ export function Formulario() {
     </div>       
     )
 }
-export default Formulario
+export default Revisao

@@ -50,7 +50,7 @@ class ListaATA extends React.Component{
         console.log(data)
         
         axios
-          .put('http://localhost:8080/api/ata/atualizar', data)
+          .put('http://localhost:8080/api/ata', data)
           .then((response) => {
             this.setState({ atas: response.data})
             document.location.reload(true);
@@ -59,13 +59,13 @@ class ListaATA extends React.Component{
 
     handleFail(data){
         let changeStatus = {
-            estado: "Reprovado"
+            estado: "Nova"
         }
         Object.assign(data, changeStatus)
         console.log(data)
         
         axios
-          .put('http://localhost:8080/api/ata/atualizar', data)
+          .put('http://localhost:8080/api/ata', data)
           .then((response) => {
             this.setState({ atas: response.data})
             document.location.reload(true);
@@ -105,7 +105,10 @@ class ListaATA extends React.Component{
                 { title: 'Horário Início', field: 'hora_inicio' },
                 { title: 'Horário Fim', field: 'hora_fim'},
                 { title: 'Local', field: 'local'},
-                { title: 'Status', field: 'estado',  lookup: {'Pendente': 'Pendente', 'Aprovado': 'Aprovado', 'Reprovado': 'Reprovado'}}
+                { title: 'Status', field: 'estado', 
+                defaultFilter: 'Pendente' ,
+                filtering: false,
+                lookup: {'Pendente': 'Pendente', 'Aprovado': 'Aprovado', 'Reprovado': 'Reprovado'}}
               ]}
               data={this.state.atas}
               actions={[
