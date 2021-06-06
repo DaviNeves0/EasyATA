@@ -20,12 +20,12 @@
 ## Entre as funcionalidades dessa entrega estão:
 
 ### Revisão de ata
-Usuário poderá pedir a revisão de uma ata existente, devendo informar o assunto da revisão Responsável da Revisão e Prazo da Revisão. Revisões pode ser incluídas, alteradas e excluídas quantas vezes forem necessárias.
+Usuário poderá pedir a revisão de uma ata existente, devendo informar o assunto da revisão, Responsável da Revisão e Prazo da Revisão. Revisões pode ser incluídas, alteradas e excluídas quantas vezes forem necessárias.
 
-Somente atas novas e atas reprovadas podem ser solicitadas para revisão e consequentemente aprovadas ou não pelo Gerente
+Somente atas novas e atas reprovadas podem ser solicitadas para revisão e consequentemente aprovadas ou não pelo Gerente.
 
 ### Assinatura unica
-Somente o administradir pode assinar uma ata dar o veredito final sobre os pontos levantados e discutidos naquela reunião.
+Somente o administradir pode assinar uma ata, e dar o veredito final sobre os pontos levantados e discutidos naquela reunião.
 
 ### 
 ### Atualizações
@@ -80,7 +80,7 @@ Obs: Reforçando que, todas as funcionalidades do usuário comum e Gerente estã
 ## `Videos demonstrativos:`
 ***
 ### Solicitando Revisão
-Vídeo demonstrativo onde o usuário cria uma ata e solicita uma revisão informando , podendo antes de solicitar a revisão editar as informações da ata presentes no banco de dados.
+Vídeo demonstrativo onde o usuário cria uma ata e solicita uma revisão devendo informar o assunto da revisão, Responsável e o Prazo da Revisão, podendo antes de solicitar a revisão editar as informações da ata presentes no banco de dados.
 
 https://user-images.githubusercontent.com/56441534/120910392-f54dc800-c654-11eb-9670-0543209e8325.mp4
 
