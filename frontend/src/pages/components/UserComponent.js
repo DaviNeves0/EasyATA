@@ -66,17 +66,9 @@ class UserComponent extends React.Component{
         }); 
     };
 
-    handleUserDelete(data){
-        var user = {id: data.id, 
-                    email: data.email, 
-                    nome: data.nome, 
-                    login: data.login,
-                    senha: data.senha,
-                    perfil: data.perfil
-                }
-        console.log(user)
+    handleUserDelete(userDel){
         axios
-          .delete('http://localhost:8080/api/usuario/deletar')
+          .delete('http://localhost:8080/api/usuario/deletar', {data: userDel})
             .then((response) => {
             this.setState({ users: response.data})
             document.location.reload(true);
