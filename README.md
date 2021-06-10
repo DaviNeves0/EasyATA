@@ -2,14 +2,21 @@
 
 
 # 📚Team  
-**Scrum Master/Developer:** Mateus Prestes Teodoro Aaves   
-**Product Owner/Developer:** Guilherme Oliveira Pontes Alvarenga  
-**Developer:** Guilherme Madeira da Silveira  
-**Developer:** Henrique Kenji Nawa  
-**Developer:** João Pedro Rabello Brasil de Mecenas</br>
-**Developer:** João Vitor de Oliveira Soeiro</br>
-**Developer:** Pedro Cruz Oliveira Araújo</br>
-**Developer:** Rodrigo Félix da Silva  
+**Scrum Master/Developer:** Mateus Prestes Teodoro Aaves  [LinkedIn](https://www.linkedin.com/in/mateus-prestes-11569118a/)
+
+**Product Owner/Developer:** Guilherme Oliveira Pontes Alvarenga  [LinkedIn](https://www.linkedin.com/in/guilherme-oliveira-14a9b8175/)
+
+**Developer:** Guilherme Madeira da Silveira [LikedIn](https://www.linkedin.com/in/guilherme-madeira-b317ab17b/)
+
+**Developer:** Henrique Kenji Nawa  [LinkedIn](https://br.linkedin.com/in/henriquenawa)
+
+**Developer:** João Pedro Rabello Brasil de Mecenas [LinkedIn](https://www.linkedin.com/in/joao-pedro-m-943a74b6)
+
+**Developer:** João Vitor de Oliveira Soeiro [LinkedIn](https://www.linkedin.com/in/joaovsoeiro)
+
+**Developer:** Pedro Cruz Oliveira Araújo [LinkedIn](https://www.linkedin.com/in/pedro-cruz77/)
+
+**Developer:** Rodrigo Félix da Silva  [LinkedIn](https://www.linkedin.com/in/rodrigo-f-da-silva-8213541bb/)
 
 <hr>
 
