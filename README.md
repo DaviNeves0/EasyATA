@@ -48,7 +48,7 @@ Entregamos ao cliente um facilitador que permitirá a criação e o registro de 
 
 <hr>
 
-# Entregas 
+# Entregas - Funcionalidades
 
  
 | Sprint 1 - Documentação, Sistema de Login e Logout                  | Conclusão|
