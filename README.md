@@ -51,7 +51,7 @@ Somente o administradir pode assinar uma ata, e dar o veredito final sobre os po
     - Solicita Revisão para atas novas e atas ja reprovadas.
     
   - Administrador:
-    - Excluisão de usuários diretamente do banco de dados.
+    - Exclusão de usuários diretamente do banco de dados.
   
 Obs: Reforçando que, todas as funcionalidades do usuário comum e Gerente estão disponíveis para usuários com nível Administrador.
 
